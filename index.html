@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>kav5.site - Online Translator</title>
+
+<style>
+
+body{
+font-family: Arial, sans-serif;
+margin:0;
+background:#f4f6ff;
+}
+
+/* Navbar */
+
+nav{
+background:#4f46e5;
+color:white;
+padding:15px 40px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+nav ul{
+list-style:none;
+display:flex;
+}
+
+nav ul li{
+margin-left:20px;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+}
+
+/* Hero */
+
+.hero{
+text-align:center;
+padding:50px 20px;
+}
+
+.hero h1{
+font-size:40px;
+}
+
+/* Translator */
+
+.translator{
+width:80%;
+max-width:800px;
+margin:auto;
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+select{
+padding:8px;
+margin-bottom:10px;
+}
+
+textarea{
+width:100%;
+height:140px;
+padding:10px;
+margin-top:10px;
+border:1px solid #ddd;
+border-radius:6px;
+resize:none;
+}
+
+button{
+margin-top:15px;
+padding:10px 20px;
+background:#4f46e5;
+color:white;
+border:none;
+border-radius:6px;
+cursor:pointer;
+}
+
+/* Features */
+
+.features{
+padding:60px 20px;
+text-align:center;
+}
+
+.feature-box{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+}
+
+.feature{
+background:white;
+padding:20px;
+width:220px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+
+footer{
+margin-top:40px;
+background:#111;
+color:#aaa;
+text-align:center;
+padding:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+
+<h2>kav5.site</h2>
+
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">Tools</a></li>
+<li><a href="#">Features</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+
+</nav>
+
+<section class="hero">
+
+<h1>kav5.site Translator Tool</h1>
+<p>Translate text instantly into multiple languages.
+
+<a href="http://565751.shop/">shop</a>
+<a href="http://565752.shop/">shop</a>
+<a href="http://565753.shop/">shop</a>
+<a href="http://565754.shop/">shop</a>
+<a href="http://565755.shop/">shop</a>
+<a href="http://565756.shop/">shop</a>
+<a href="http://565757.shop/">shop</a>
+<a href="http://565758.shop/">shop</a>
+<a href="http://565759.shop/">shop</a>
+<a href="http://565760.shop/">shop</a>
+<a href="http://565761.shop/">shop</a>
+<a href="http://565762.shop/">shop</a>
+<a href="https://565763.shop/"></a>
+<a href=""></a>
+<a href=""></a>
+
+
+</p>
+
+</section>
+
+<div class="translator">
+
+<select>
+<option>English</option>
+<option>Urdu</option>
+<option>Spanish</option>
+<option>French</option>
+</select>
+
+<select>
+<option>Urdu</option>
+<option>English</option>
+<option>Spanish</option>
+<option>French</option>
+</select>
+
+<textarea id="inputText" placeholder="Enter text..."></textarea>
+
+<textarea id="outputText" placeholder="Translation..." readonly></textarea>
+
+<button onclick="translateText()">Translate</button>
+
+</div>
+
+<section class="features">
+
+<h2>Features</h2>
+
+<div class="feature-box">
+
+<div class="feature">
+<h3>Fast</h3>
+<p>Instant translation in seconds.</p>
+</div>
+
+<div class="feature">
+<h3>Multiple Languages</h3>
+<p>Translate across many languages.</p>
+</div>
+
+<div class="feature">
+<h3>Simple UI</h3>
+<p>Easy and clean interface.</p>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 kav5.site | Online Translator</p>
+
+</footer>
+
+<script>
+
+function translateText(){
+
+let text = document.getElementById("inputText").value;
+
+if(text===""){
+alert("Please enter text");
+return;
+}
+
+document.getElementById("outputText").value =
+"Translated text: " + text;
+
+}
+
+</script>
+
+</body>
+</html>
